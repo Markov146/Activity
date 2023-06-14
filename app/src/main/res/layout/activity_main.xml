@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        android:background="@drawable/draw"
+        android:background="@drawable/dra"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp"
         tools:ignore="MissingConstraints"
@@ -40,43 +40,64 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:drawablePadding="8dp"
-            android:hint="Пароль"
-            android:background="@drawable/drawab"
-            android:inputType="textPassword"
-            android:padding="8dp"
-            android:textColor="@color/white"/>
-
-        <EditText
-            android:id="@+id/username"
+            android:id="@+id/signup_login"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/drawab"
             android:drawablePadding="40dp"
-            android:hint="Логин"
+            android:hint="Login"
             android:padding="8dp"
             android:textColor="@color/white" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/drawab"
+            android:drawablePadding="40dp"
+            android:hint="Email"
+            android:padding="8dp"
+            android:textColor="@color/white" />
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:background="@drawable/drawab"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnGoToSecAct"
             android:layout_width="297dp"
             android:layout_height="75dp"
-            android:layout_marginBottom="340dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="340dp"
             android:background="@drawable/dra"
             android:padding="20dp"
             android:text="Войти"
-            android:textColor="@color/purple"
+            android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintBaseline_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupRedirectText"
+        android:text="Not yet registered? Sign Up"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
     </LinearLayout>
 
 
